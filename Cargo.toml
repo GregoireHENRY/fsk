@@ -1,0 +1,33 @@
+[package]
+name = "fetch-spice-kernels"
+version = "0.1.0"
+edition = "2021"
+authors = ["Grégoire Henry <gregoireh@pm.me>"]
+description = "Quickly download NASA/NAIF Spice kernels"
+repository = "https://github.com/GregoireHENRY/fetch-spice-kernels"
+# keywords = []
+# categories = []
+
+[lib]
+name = "fsk"
+crate-type = ["cdylib"]
+
+# [features]
+
+[dependencies]
+dotenv = { version = "0.15" }
+strum = { version = "0.26", features = ["derive"] }
+itertools = "0.12"
+snafu = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+polars = { version = "0.37", features = [] }
+nalgebra = { version = "0.32", features = ["serde-serialize"] }
+derive_builder = { version = "0.13" }
+figment = { version = "0.10", features = ["yaml", "toml", "env", "json"] }
+
+pyo3 = { version = "0.20", features = ["multiple-pymethods", "extension-module"] }
+
+
+[dev-dependencies]
+rstest = "0.18"
+serial_test = "3.0"
