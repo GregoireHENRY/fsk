@@ -2,7 +2,7 @@
 fetch-spice-kernels
 ===================
 
-**Quickly download NASA/NAIF Spice kernels**
+**Fetch SPICE kernels**
 
 License
 =======

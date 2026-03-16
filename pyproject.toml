@@ -1,6 +1,6 @@
 [project]
 name = "fsk"
-version = "0.2.0"
+version = "0.4.0"
 description = "Fetch SPICE kernels"
 readme = "README.rst"
 requires-python = "==3.14.3"
@@ -19,12 +19,10 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "ipython>=9.11.0",
     "maturin>=1.12.6",
     "mypy>=1.19.1",
-    "ptpython>=3.0.32",
-    "pygments>=2.19.2",
     "ruff>=0.15.6",
+    "pygments>=2.19.2",
 ]
 
 [tool.maturin]
