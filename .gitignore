@@ -19,6 +19,7 @@ python/__pycache__/
 .pytest_cache/
 *.py[cod]
 .python-version
+uv.lock
 
 # C extensions
 *.so
