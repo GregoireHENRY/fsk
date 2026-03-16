@@ -1,16 +1,16 @@
-<div align="center">
-
-# fetch-spice-kernels
+===================
+fetch-spice-kernels
+===================
 
 **Quickly download NASA/NAIF Spice kernels**
 
-</div>
-
-## License
+License
+=======
 
 Licensed under the [Apache License, Version 2.0][apache2].
 
-## Contribution
+Contribution
+============
 
 Any contribution is welcome. 
 

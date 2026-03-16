@@ -1,24 +1,35 @@
-[build-system]
-requires = ["maturin>=1.4,<2.0"]
-build-backend = "maturin"
-
 [project]
 name = "fsk"
-requires-python = ">=3.8"
+version = "0.1.0"
+description = "Fetch SPICE kernels"
+readme = "readme.rst"
+requires-python = "==3.14.3"
 classifiers = [
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dynamic = ["version"]
+dependencies = [
+    "niquests>=3.18.2",
+    "numpy>=2.4.3",
+    "spiceypy>=8.0.2",
+    "tqdm>=4.67.3",
+    "urlpath>=2.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipython>=9.11.0",
+    "maturin>=1.12.6",
+    "mypy>=1.19.1",
+    "ptpython>=3.0.32",
+    "pygments>=2.19.2",
+    "ruff>=0.15.6",
+]
 
 [tool.maturin]
-features = ["pyo3/extension-module"]
-python-source = "python"
+module-name = "fsk._rs"
 
-dependencies = [
-  "niquests",
-  "tqdm",
-  "urlpath",
-  "spiceypy"
-]
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"

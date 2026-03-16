@@ -1,5 +1,6 @@
 ///! Quickly download NASA/NAIF Spice kernels
-pub mod python;
+pub mod py;
+pub mod util;
 
 use snafu::prelude::*;
 

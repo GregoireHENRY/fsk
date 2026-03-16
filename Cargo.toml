@@ -1,33 +1,40 @@
 [package]
-name = "fetch-spice-kernels"
+name = "fsk"
 version = "0.1.0"
-edition = "2021"
-authors = ["Grégoire Henry <gregoireh@pm.me>"]
 description = "Quickly download NASA/NAIF Spice kernels"
+authors = ["Grégoire Henry <gregoireh@pm.me>"]
 repository = "https://github.com/GregoireHENRY/fetch-spice-kernels"
+edition = "2021"
 # keywords = []
 # categories = []
 
 [lib]
 name = "fsk"
-crate-type = ["cdylib"]
+crate-type = ["lib", "cdylib"]
 
 # [features]
 
 [dependencies]
-dotenv = { version = "0.15" }
-strum = { version = "0.26", features = ["derive"] }
-itertools = "0.12"
-snafu = "0.8"
+dotenv = { version = "0.15.0" }
+strum = { version = "0.28.0", features = ["derive"] }
+itertools = "0.14.0"
+snafu = "0.9"
 serde = { version = "1.0", features = ["derive"] }
-polars = { version = "0.37", features = [] }
-nalgebra = { version = "0.32", features = ["serde-serialize"] }
-derive_builder = { version = "0.13" }
+polars = { version = "0.53.0", features = [] }
+nalgebra = { version = "0.34.1", features = ["serde-serialize"] }
+derive_builder = { version = "0.20.2" }
 figment = { version = "0.10", features = ["yaml", "toml", "env", "json"] }
 
-pyo3 = { version = "0.20", features = ["multiple-pymethods", "extension-module"] }
+
+# Python
+pyo3 = { version = "0.28.2", features = [
+    "multiple-pymethods",
+    "experimental-inspect",
+    "abi3-py314",
+] }
+numpy = { version = "0.28" }
 
 
 [dev-dependencies]
-rstest = "0.18"
-serial_test = "3.0"
+rstest = "0.26.1"
+serial_test = "3.4.0"
