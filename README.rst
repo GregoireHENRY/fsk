@@ -7,7 +7,7 @@ fetch-spice-kernels
 License
 =======
 
-Licensed under the Apache License, Version 2.0 `test <https://www.apache.org/licenses/LICENSE-2.0>`_
+Licensed under the `Apache License, Version 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`_.
 
 Contribution
 ============
