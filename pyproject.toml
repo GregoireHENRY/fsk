@@ -14,7 +14,6 @@ dependencies = [
     "numpy>=2.4.3",
     "spiceypy>=8.0.2",
     "tqdm>=4.67.3",
-    "urlpath>=2.0.0",
 ]
 
 [dependency-groups]
