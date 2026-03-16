@@ -1,6 +1,6 @@
 [package]
 name = "fsk"
-version = "0.1.0"
+version = "0.2.0"
 description = "Quickly download NASA/NAIF Spice kernels"
 authors = ["Grégoire Henry <gregoireh@pm.me>"]
 repository = "https://github.com/GregoireHENRY/fetch-spice-kernels"
