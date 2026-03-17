@@ -2,7 +2,7 @@
 fetch-spice-kernels
 ===================
 
-**Fetch SPICE kernels**
+*Fetch SPICE kernels*
 
 License
 =======
