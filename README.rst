@@ -1,6 +1,6 @@
-===================
-fetch-spice-kernels
-===================
+===
+fsk
+===
 
 *Fetch SPICE kernels*
 
